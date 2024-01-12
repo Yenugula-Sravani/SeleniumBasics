@@ -13,13 +13,13 @@
 -->if there are no id,classname,name locators,we can use cssSelectors and Xpath for locating the html components on web page.
 
 <h2>---------------HOW TO DO CSSSELECTOR LOCATORS---------------:-</h2>
--->Three ways to define the cssSelectors as follows.
-==>Class name -> tagname.classname -> Ex:- Button.signInBtn ->Ex:- p.error
-==>Id -> tagname#id  -> Ex:- input#inputUsername
-==>Tagname[attribute=’value’]
+<li>Three ways to define the cssSelectors as follows.</li>
+<li>Class name -> tagname.classname -> Ex:- Button.signInBtn ->Ex:- p.error</li>
+<li>Id -> tagname#id  -> Ex:- input#inputUsername</li>
+<li>Tagname[attribute=’value’]</li>
 
-Ex:- <input type="text" placeholder="Username” value=" ">
-     CssSelectors::-Input [placeholder=’ Username’]
+<li><input type="text" placeholder="Username” value=" "></li> 
+ <li> CssSelectors::-Input [placeholder=’ Username’]</li>   
    
 <h2>---------------HOW TO GENERATE XPATH LOCATORS---------------:-</h2>
 -->Following is the syntax of generating the xpath locators.

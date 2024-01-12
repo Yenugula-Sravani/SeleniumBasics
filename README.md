@@ -2,14 +2,14 @@
 <h2>---------------SELENIUM WEB DRIVER LOCATORS---------------:-</h2>
 -->for selenium to understand the html components on the web page ,we will use concept called locators.
 --><li>Below are the different locators in the selenium:-</li>
-   <ul>ID</ul>
-   <ul>Xpath</ul>
-   <ul>CSS Selector</ul>
-   <ul>name</ul>
-   <ul>Class Name</ul>
-   <ul>Tag Name</ul>
-   <ul>Link Text</ul>
-   <ul>Partial Link Text</ul>
+   <ul>1.ID</ul>
+   <ul>2.Xpath</ul>
+   <ul>3.CSS Selector</ul>
+   <ul>4.name</ul>
+   <ul>5.Class Name</ul>
+   <ul>6.Tag Name</ul>
+   <ul>7.Link Text</ul>
+   <ul>8.Partial Link Text</ul>
 -->if there are no id,classname,name locators,we can use cssSelectors and Xpath for locating the html components on web page.
 
 <h2>---------------HOW TO DO CSSSELECTOR LOCATORS---------------:-</h2>

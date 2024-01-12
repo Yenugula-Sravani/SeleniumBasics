@@ -57,13 +57,13 @@
 		}<br>
 
 <h2>---------------Handling checkboxes using selenium---------------:-</h2>
--->System.out.println(driver.findElement(By.cssSelector("input[id*='friendsandfamily']")).isSelected());
--->For clicking the checkboxes
-   Ex:-driver.findElement(By.cssSelector("input[id*='friendsandfamily']")).click();
--->To check weather checkboxes are selected or not -return t or f.
-   Ex:-System.out.println(driver.findElement(By.cssSelector("input[id*='friendsandfamily']")).isSelected());
--->count of the checkboxex in the page
-   Ex:-System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
+-->System.out.println(driver.findElement(By.cssSelector("input[id*='friendsandfamily']")).isSelected());<br>
+-->For clicking the checkboxes<br>
+   Ex:-driver.findElement(By.cssSelector("input[id*='friendsandfamily']")).click();<br>
+-->To check weather checkboxes are selected or not -return t or f.<br>
+   Ex:-System.out.println(driver.findElement(By.cssSelector("input[id*='friendsandfamily']")).isSelected());<br>
+-->count of the checkboxex in the page<br>
+   Ex:-System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());<br>
   
 <h2>---------------Handling calender current date in ui using selenium---------------:-</h2>
 -->driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();  

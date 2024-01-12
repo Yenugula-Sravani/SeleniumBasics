@@ -69,44 +69,43 @@
 -->driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();  
 
 <h2>---------------Java 8 stream Api---------------:-</h2>
--->If we have arrays,we can convert into list by using Arrays.asList("sravani","santhu","akrtih")
--->Take Arraylist-names and perfome operations on that.
--->names.stream().filter(s->s.startsWith('A')).count();
--->foreach()-->for printing list
--->concat()-->for merging 2 different lists
--->sorted()-->prints sorted list
--->anyMatch()-->returns boolean value according to requriments.
--->collect()-->convert final operations on the list into new list.Ex:-Stream.of("sravani","adam","rama").filter(s->s.endWith('a')).sorted().map(s->s.toUppercase()).collect(Collectors.toList or toSet);
--->distinct()-->select the unique values in the list.
--->limit()-->limit(0)-->gets first value-->limit(1)-->prints the values of 0 and 1st index.
+-->If we have arrays,we can convert into list by using Arrays.asList("sravani","santhu","akrtih")<br>
+-->Take Arraylist-names and perfome operations on that.<br>
+-->names.stream().filter(s->s.startsWith('A')).count();<br>
+-->foreach()-->for printing list<br>
+-->concat()-->for merging 2 different lists<br>
+-->sorted()-->prints sorted list<br>
+-->anyMatch()-->returns boolean value according to requriments.<br>
+-->collect()-->convert final operations on the list into new list.Ex:-Stream.of("sravani","adam","rama").filter(s->s.endWith('a')).sorted().map(s->s.toUppercase()).collect(Collectors.toList or toSet);<br>
+-->distinct()-->select the unique values in the list.<br>
+-->limit()-->limit(0)-->gets first value-->limit(1)-->prints the values of 0 and 1st index.<br>
 <h2>---------------Intermidate operations and Terminal operations:----------------</h2>
--->There is no life for intermediate op if there is no terminal op.
--->terminal operations will execute only if intermideate operations(filter) returns true.
+-->There is no life for intermediate op if there is no terminal op.<br>
+-->terminal operations will execute only if intermideate operations(filter) returns true.<br>
 
 <h2>---------------We can use streams instead of the arraylist or collections:----------------</h2>
--->Gives the names which end with a and returns the uppercase.
-   Ex:-Stream.of("sravani","adam","rama").filter(s->s.endWith('a')).map(s->s.toUppercase());
-   
--->Perform the sorting:- 
-   Ex:-Stream.of("sravani","adam","rama").filter(s->s.endWith('a')).sorted().map(s->s.toUppercase()).foreach(s->System.out.println(s));  
+-->Gives the names which end with a and returns the uppercase.<br>
+   Ex:-Stream.of("sravani","adam","rama").filter(s->s.endWith('a')).map(s->s.toUppercase());<br>   
+-->Perform the sorting:- <br>
+   Ex:-Stream.of("sravani","adam","rama").filter(s->s.endWith('a')).sorted().map(s->s.toUppercase()).foreach(s->System.out.println(s)); <br> 
    
 <h2>---------------Handling webelements and tables using java streams:----------------</h2>
 
--->capture all webelements into list
-   Ex:-List<WebElement> Elementslist = driver.findElements(By.xpath("//tr/td[1]"));
--->capture the text of all webelements into new original list
-   Ex:-List<String> originallist = Elementslist.stream().map(s -> s.getText()).collect(Collectors.toList());
--->sorting the original list
-   Ex:-List<String> sortedlist = originallist.stream().sorted().collect(Collectors.toList());
--->comparing the 2 lists
-   Ex:-Assert.assertTrue(originallist.equals(sortedlist));
--->scan the name of the column and if it is rice bring the price of the rice.
-   Ex:-List<String> pricelist = Elementslist.stream().filter(s->s.getText().contains("Beans"))
-				.map(s->getPriceVeggie(s)).collect(Collectors.toList());
-		pricelist.forEach(a->System.out.println(a));
-	}
-	private static String getPriceVeggie(WebElement s) {
-		String text = s.findElement(By.xpath("following-sibling::td[1]")).getText();
-		return text;
-	}
+-->capture all webelements into list<br>
+   Ex:-List<WebElement> Elementslist = driver.findElements(By.xpath("//tr/td[1]"));<br>
+-->capture the text of all webelements into new original list<br>
+   Ex:-List<String> originallist = Elementslist.stream().map(s -> s.getText()).collect(Collectors.toList());<br>
+-->sorting the original list<br>
+   Ex:-List<String> sortedlist = originallist.stream().sorted().collect(Collectors.toList());<br>
+-->comparing the 2 lists<br>
+   Ex:-Assert.assertTrue(originallist.equals(sortedlist));<br>
+-->scan the name of the column and if it is rice bring the price of the rice.<br>
+   Ex:-List<String> pricelist = Elementslist.stream().filter(s->s.getText().contains("Beans"))<br>
+				.map(s->getPriceVeggie(s)).collect(Collectors.toList());<br>
+		pricelist.forEach(a->System.out.println(a));<br>
+	}<br>
+	private static String getPriceVeggie(WebElement s) {<br>
+		String text = s.findElement(By.xpath("following-sibling::td[1]")).getText();<br>
+		return text;<br>
+	}<br>
        

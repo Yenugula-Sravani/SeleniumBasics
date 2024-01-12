@@ -17,24 +17,21 @@
 <li>Class name -> tagname.classname -> Ex:- Button.signInBtn ->Ex:- p.error</li>
 <li>Id -> tagname#id  -> Ex:- input#inputUsername</li>
 <li>Tagname[attribute=’value’]</li>
-
 <li><input type="text" placeholder="Username” value=" "></li> 
  <li> CssSelectors::-Input [placeholder=’ Username’]</li>   
    
 <h2>---------------HOW TO GENERATE XPATH LOCATORS---------------:-</h2>
--->Following is the syntax of generating the xpath locators.
-==>//Tagname[@attribute=’value’]
- Ex 1:-//input[@placeholder=’ Username’]
-
- Ex 2:- <input type="text" placeholder="Name">
-        Xpath::- //input[@placeholder=’ Name’]
-		
---> //Tagname[@attribute=’value’][index]
+<li>Following is the syntax of generating the xpath locators.</li>
+<li>//Tagname[@attribute=’value’]</li>
+<li>//input[@placeholder=’ Username’]</li>
+<li><input type="text" placeholder="Name"></li>
+<li>Xpath::- //input[@placeholder=’ Name’]</li>
+<li>//Tagname[@attribute=’value’][index]
 	//parentTagname/childTagname
 	//button[contains(@class,'submit')].==>Regular expression 
 	//tagname
 	//header/div/button[1]/following-sibling::button[1]
-	//header/div/button[1]/parent::div
+	//header/div/button[1]/parent::div</li>
 		
 <h2>---------------Handling static dropdown using the selenium---------------:-</h2>
 -->static dropdown means in Html code,we should defeintly use SELECT Tag.

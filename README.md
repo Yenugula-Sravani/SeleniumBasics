@@ -46,15 +46,15 @@
 <li>//div[@id='ctl00_mainContent_ddl_destinationStation1_CTXT']  //a[@value='MAA']</li>
 
 <h2>---------------Handling autosuggestive using the selenium---------------:-</h2>
--->driver.findElement(By.id("autosuggest")).sendKeys("ind");
-		Thread.sleep(2000);
-		List<WebElement> options=driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
-		for(WebElement element:options) {
-			if(element.getText().equalsIgnoreCase("india")) {
-				element.click();
-				break;
-			}
-		}
+-->driver.findElement(By.id("autosuggest")).sendKeys("ind");<br>
+		Thread.sleep(2000);<br>
+		List<WebElement> options=driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));<br>
+		for(WebElement element:options) {<br>
+			if(element.getText().equalsIgnoreCase("india")) {<br>
+				element.click();<br>
+				break;<br>
+			}<br>
+		}<br>
 
 <h2>---------------Handling checkboxes using selenium---------------:-</h2>
 -->System.out.println(driver.findElement(By.cssSelector("input[id*='friendsandfamily']")).isSelected());

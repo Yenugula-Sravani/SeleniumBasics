@@ -26,24 +26,24 @@
 <li>//input[@placeholder=’ Username’]</li>
 <li><input type="text" placeholder="Name"></li>
 <li>Xpath::- //input[@placeholder=’ Name’]</li>
-<li>//Tagname[@attribute=’value’][index]
-	//parentTagname/childTagname
-	//button[contains(@class,'submit')].==>Regular expression 
-	//tagname
-	//header/div/button[1]/following-sibling::button[1]
+<li>//Tagname[@attribute=’value’][index],
+	//parentTagname/childTagname,
+	//button[contains(@class,'submit')].==>Regular expression, 
+	//tagname,
+	//header/div/button[1]/following-sibling::button[1],
 	//header/div/button[1]/parent::div</li>
 		
 <h2>---------------Handling static dropdown using the selenium---------------:-</h2>
--->static dropdown means in Html code,we should defeintly use SELECT Tag.
--->First create the class of SELECT Class in selenium and pass the webelement of the dropdown by using locators.'
--->then use the methods like selectByIndex(),selectByVisibleText(),selectByValue() methods for accessing the static dropdown.
+<li>static dropdown means in Html code,we should defeintly use SELECT Tag.</li>
+<li>First create the class of SELECT Class in selenium and pass the webelement of the dropdown by using locators.</li>
+<li>then use the methods like selectByIndex(),selectByVisibleText(),selectByValue() methods for accessing the static dropdown.</li>
 
 <h2>---------------Handling dynamic dropdown using the selenium---------------:-</h2>
--->By using indexing methods ,we automate the dynamic dropdown.
-   Ex:-driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
--->By using parent-child relationship,we can find locators and accessing the webelements on the webpage.
-   Ex:-//div[@id='glsctl00_mainContent_ddl_originStation1_CTNR'] //a[@value='BLR']
-       //div[@id='ctl00_mainContent_ddl_destinationStation1_CTXT']  //a[@value='MAA']
+<li>By using indexing methods ,we automate the dynamic dropdown.</li>
+ <li>Ex:-driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();</li>
+<li>By using parent-child relationship,we can find locators and accessing the webelements on the webpage.</li>
+ <li>Ex:-//div[@id='glsctl00_mainContent_ddl_originStation1_CTNR'] //a[@value='BLR']</li> 
+<li>//div[@id='ctl00_mainContent_ddl_destinationStation1_CTXT']  //a[@value='MAA']</li>
 
 <h2>---------------Handling autosuggestive using the selenium---------------:-</h2>
 -->driver.findElement(By.id("autosuggest")).sendKeys("ind");
